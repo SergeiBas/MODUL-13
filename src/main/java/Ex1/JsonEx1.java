@@ -30,7 +30,7 @@ public class JsonEx1 implements Constants {
 
         final String body = GSON.toJson(user);
 
-        HttpRequest request = HttpRequest.newBuilder()
+            HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(USER_URL + "/3"))
                 .header("Content-Type", "application/json")
                 .PUT(HttpRequest.BodyPublishers.ofString(body))

@@ -78,6 +78,4 @@ public class JsonEx1 implements Constants {
         HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         return response;
     }
-
-
 }
